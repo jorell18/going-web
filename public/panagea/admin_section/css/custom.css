@@ -1,0 +1,4 @@
+/* YOUR CUSTOM CSS */
+header.header.sticky>ul>li {
+    color: #555;
+}

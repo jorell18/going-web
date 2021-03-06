@@ -1,0 +1,22 @@
+@import url("/template/bootstrap.min.css"); 						        							/* Main Bootstrap */
+@import url("/template/animate.min.css");																/* Animate On Page Scroll */
+@import url("/template/style.css");																	/* Main theme styles */
+@import url("/template/menu.css");																	/* Menu styles */
+@import url("/template/responsive.css");																/* Responsive */
+@import url("/template/fontello/css/all-fontello.min.css");											/* Icon pack */
+@import url("/template/icon_restaurant/css/icon_restaurants.min.css");								/* Icon pack */
+@import url("/template/new_icons/css/icon_set_all.min.css");									        /* Icon pack */
+@import url("/template/magnific-popup.css");															/* Lightbox & dialog script */
+@import url("/template/pop_up.css");																	/* Popup Advertising */
+@import url("/template/custom.css");																	/* We suggest to place here your css in order to simply update the item */
+/*
+How to change colors
+1) uncomment one of the color variation below
+2) rename the color variation logo img inside the img folder to match the default logo file name (logo.png/logo_sticky.png), this avoid to change the logo file name in every page.
+
+DONE!
+*/
+
+/* @import url("color-aqua.css");					 	 Color variation aqua */
+/* @import url("color-orange.css");					  Color variation Orange */
+ @import url("color-green.css");					    /* Color variation Green */
