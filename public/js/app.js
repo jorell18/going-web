@@ -74732,7 +74732,7 @@ var UrlService = /*#__PURE__*/function () {
     value: function AppUrl() {
       if (isProd) {
         return "https://going-recommendation-system.herokuapp.com";
-      } else return "https://going.local";
+      } else return "https://going-web.local";
     }
   }]);
 
@@ -74761,8 +74761,8 @@ var UrlService = /*#__PURE__*/function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\going-recommendation-system\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\going-recommendation-system\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\going-web\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\going-web\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
