@@ -77,7 +77,7 @@ class Admin extends Component {
         }
 
         //import JS files
-        // this.importAdminJSFiles();
+        this.importAdminJSFiles();
 
         //move modal to before body end tag
         var modal = document.getElementById("exampleModal");

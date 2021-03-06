@@ -40,7 +40,7 @@ export class MainApp extends Component {
                 storageAppData = storageData;
             }
         } else {
-            console.log("no data");
+            console.log("no data sizt");
         }
 
         console.log("storageAppData", storageData);
@@ -190,36 +190,7 @@ export class MainApp extends Component {
     };
 
     render() {
-        // this.importAPPJSfiles();
-
-        var importJS = (
-            <div id="mainJS">
-                <script src="panagea/js/common_scripts.js"></script>
-                <script src="panagea/js/main.js"></script>
-                <script src="panagea/assets/validate.js"></script>
-                <script src="panagea/js/modernizr.js"></script>
-            </div>
-        );
-
-        if (this.state.appData.signedIn && this.state.appData.user) {
-            if (this.state.appData.user.role === "admin") {
-                importJS = (
-                    <div id="adminJS">
-                        <script src="panagea/admin_section/vendor/jquery/jquery.min.js"></script>
-                        <script src="panagea/admin_section/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                        <script src="panagea/admin_section/vendor/jquery-easing/jquery.easing.min.js"></script>
-                        <script src="panagea/admin_section/vendor/chart.js/Chart.js"></script>
-                        <script src="panagea/admin_section/vendor/datatables/jquery.dataTables.js"></script>
-                        <script src="panagea/admin_section/vendor/datatables/dataTables.bootstrap4.js"></script>
-                        <script src="panagea/admin_section/vendor/jquery.selectbox-0.2.js"></script>
-                        <script src="panagea/admin_section/vendor/retina-replace.min.js"></script>
-                        <script src="panagea/admin_section/vendor/jquery.magnific-popup.min.js"></script>
-                        <script src="panagea/admin_section/js/admin.j"></script>
-                        <script src="panagea/admin_section/js/admin-charts.js"></script>
-                    </div>
-                );
-            }
-        }
+        this.importAPPJSfiles();
 
         return (
             // <AppContext.Provider context={this.context}>
@@ -374,7 +345,6 @@ export class MainApp extends Component {
                     </main>
                 </Router>
                 {/* </AppContext.Provider> */}
-                {importJS}
             </div>
         );
     }

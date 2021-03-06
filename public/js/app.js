@@ -71439,9 +71439,9 @@ var Admin = /*#__PURE__*/function (_Component) {
       while (appJS.firstChild) {
         appJS.removeChild(appJS.lastChild);
       } //import JS files
-      // this.importAdminJSFiles();
-      //move modal to before body end tag
 
+
+      this.importAdminJSFiles(); //move modal to before body end tag
 
       var modal = document.getElementById("exampleModal");
       var body = document.getElementsByTagName("body")[0];
@@ -73677,7 +73677,7 @@ var MainApp = /*#__PURE__*/function (_Component) {
         storageAppData = storageData;
       }
     } else {
-      console.log("no data");
+      console.log("no data sizt");
     }
 
     console.log("storageAppData", storageData);
@@ -73738,49 +73738,7 @@ var MainApp = /*#__PURE__*/function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      // this.importAPPJSfiles();
-      var importJS = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "mainJS"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-        src: "panagea/js/common_scripts.js"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-        src: "panagea/js/main.js"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-        src: "panagea/assets/validate.js"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-        src: "panagea/js/modernizr.js"
-      }));
-
-      if (this.state.appData.signedIn && this.state.appData.user) {
-        if (this.state.appData.user.role === "admin") {
-          importJS = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-            id: "adminJS"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/vendor/jquery/jquery.min.js"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/vendor/bootstrap/js/bootstrap.bundle.min.js"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/vendor/jquery-easing/jquery.easing.min.js"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/vendor/chart.js/Chart.js"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/vendor/datatables/jquery.dataTables.js"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/vendor/datatables/dataTables.bootstrap4.js"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/vendor/jquery.selectbox-0.2.js"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/vendor/retina-replace.min.js"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/vendor/jquery.magnific-popup.min.js"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/js/admin.j"
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-            src: "panagea/admin_section/js/admin-charts.js"
-          }));
-        }
-      }
-
+      this.importAPPJSfiles();
       return (
         /*#__PURE__*/
         // <AppContext.Provider context={this.context}>
@@ -73894,7 +73852,7 @@ var MainApp = /*#__PURE__*/function (_Component) {
         }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
           path: "*",
           component: _NotFound__WEBPACK_IMPORTED_MODULE_7__["default"]
-        })))), importJS)
+        })))))
       );
     }
   }]);
@@ -74720,7 +74678,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var isProd = false;
+var isProd = true;
 
 var UrlService = /*#__PURE__*/function () {
   function UrlService() {

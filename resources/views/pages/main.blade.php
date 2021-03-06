@@ -16,6 +16,10 @@
 
     <div id="main-app"></div>
     <div id="toTop"></div>
+
+    <div id="app-js"></div>
+    <div id="admin-js"></div>
+
     <script src="js/app.js"></script>
 
 </body>
