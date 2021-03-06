@@ -16,6 +16,7 @@ import Feed from "./Feed";
 import Admin from "./Admin/Admin";
 import UrlService from "../services/UrlService";
 import Helmet from "react-helmet";
+import $ from "jquery";
 
 export class MainApp extends Component {
     constructor(props) {
